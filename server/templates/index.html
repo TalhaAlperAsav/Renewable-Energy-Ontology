@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPARQL Results</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>SPARQL Query Results</h1>
+
+            <form class="index_form" action="{{ url_for('query') }}" method="post">
+                <label class="index_label" for="query_option">Select Query:</label>
+                <select class="index_select" id="query_option" name="query_option">
+                    <option value="1">Query 1</option>
+                    <option value="2">Renewable Energies</option>
+                    <option value="3">Facilities</option>
+                    <option value="4">Producers</option>
+                    <option value="5">Sensors</option>
+                    <option value="6">Notifications</option>
+                    <option value="7">Produced_by Restriction</option>
+                    <option value="8">Checked_by Restriction</option>
+                    <option value="9">Triggers Restriction</option>
+                </select>
+                <button class="index_button" type="submit">Submit</button>
+            </form>
+
+            <h2>Renewable Energy Ontology</h2>
+        </div>
+    </main>
+</body>
+
+</html>

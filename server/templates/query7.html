@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Query 7 Results</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Query 7 Results</h1>
+
+            <h2>Results:</h2>
+            <div class="table_wrapper">
+                <table>
+                    <tr>
+                        <th>Renewable Energy</th>
+                    </tr>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.renewableEnergy.value }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <!-- Display the embedded SPARQL query with explanatory text -->
+            <h3>Restriction Query</h3>
+            <p>This query retrieves renewable energy resources produced by producers with at most 2 occurrences.</p>
+            <pre>
+PREFIX reo: <a href="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#" target="_blank">< http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33# ></a>
+PREFIX rdf: <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">< http://www.w3.org/1999/02/22-rdf-syntax-ns# ></a>
+PREFIX owl: <a href="http://www.w3.org/2002/07/owl#" target="_blank">< http://www.w3.org/2002/07/owl# ></a>
+
+SELECT ?renewableEnergy
+WHERE {
+?renewableEnergy rdf:type reo:Renewable_Energy.
+?renewableEnergy reo:produced_by ?producer.
+
+{
+SELECT ?renewableEnergy (COUNT(?producer) AS ?producerCount)
+WHERE {
+?renewableEnergy rdf:type reo:Renewable_Energy.
+?renewableEnergy reo:produced_by ?producer.
+}
+GROUP BY ?renewableEnergy
+}
+
+FILTER (?producerCount<=2)
+}
+    </pre>
+        </div>
+    </main>
+</body>
+
+</html>

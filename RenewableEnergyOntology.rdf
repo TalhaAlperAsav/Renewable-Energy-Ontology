@@ -1,0 +1,911 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33/"
+     xml:base="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-33="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33">
+        <rdfs:comment>This is the Renewable Energy Ontology that created by 191805060 Semih Utku Polat and 201805072 Talha Alper Asav.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Facilities"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#GasConcentration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#GasConcentration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Irradiance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Irradiance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#NotificationMessage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#NotificationMessage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Pressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Pressure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Temperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#TiltAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#TiltAngle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterDirection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindDirection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Energy">
+        <rdfs:label xml:lang="en">Energy</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q11379</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Facilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Facilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Energy"/>
+        <rdfs:label xml:lang="en">Facilities</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q56397239</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <rdfs:label xml:lang="en">Notifications</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2150504</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Facilities"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Producers</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q159719</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Energy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Renewable_Energy</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q12705</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Facilities"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#triggers"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Sensors</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q167676</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <untitled-ontology-33:NotificationMessage>Critical condition detected. Immediate action required.</untitled-ontology-33:NotificationMessage>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q945434</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Anemometer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Anemometer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q175029</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q128991</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Energy_Meter_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Energy_Meter_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Gas_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Gas_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q28692087</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Pressure_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Pressure_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1261040</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Energy_Meter_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Gas_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Pressure_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Temperature_Sensor"/>
+        <untitled-ontology-33:EnergyProduced rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:GasConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-33:GasConcentration>
+        <untitled-ontology-33:Pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101</untitled-ontology-33:Pressure>
+        <untitled-ontology-33:Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</untitled-ontology-33:Temperature>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q55364050</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700</owl:annotatedTarget>
+        <rdfs:comment>Generating about 700 TWh of electricity (about 2.5% of total demand) in 2022</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#GasConcentration"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</owl:annotatedTarget>
+        <rdfs:comment>300 ppm representing the concentration of a specific gas during biofuel production</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Pressure"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101</owl:annotatedTarget>
+        <rdfs:comment>101 Pa</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Production_Facility"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Temperature"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</owl:annotatedTarget>
+        <rdfs:comment>38°C representing temperature during biofuel production.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Temperature_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Biofuel_Temperature_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q646</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+        <untitled-ontology-33:NotificationMessage>Potential issue detected in the early stage. Monitor closely.</untitled-ontology-33:NotificationMessage>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q5326904</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Energy_Meter_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Energy_Meter_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Gas_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Gas_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q28692087</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q127993</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Energy_Meter_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Gas_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Pressure_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Temperature_Sensor"/>
+        <untitled-ontology-33:EnergyProduced rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3692</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:GasConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-33:GasConcentration>
+        <untitled-ontology-33:Pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150000</untitled-ontology-33:Pressure>
+        <untitled-ontology-33:Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-33:Temperature>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q30565277</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3692</owl:annotatedTarget>
+        <rdfs:comment>In 2021, there were 3,692 MW of geothermal electricity plants in operation in the U.S.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#GasConcentration"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</owl:annotatedTarget>
+        <rdfs:comment>50 ppm representing the concentration in the geothermal system.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Pressure"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150000</owl:annotatedTarget>
+        <rdfs:comment>150000 Pa representing pressure in a geothermal well.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Power_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Temperature"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</owl:annotatedTarget>
+        <rdfs:comment>250°C representing the temperature in the geothermal system.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Pressure_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Pressure_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1261040</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Temperature_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Geothermal_Temperature_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q646</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Energy_Meter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Energy_Meter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Energy_Meter"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Direction_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Level_Sensor"/>
+        <untitled-ontology-33:EnergyProduced rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:WaterDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</untitled-ontology-33:WaterDirection>
+        <untitled-ontology-33:WaterLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-33:WaterLevel>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q15911738</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</owl:annotatedTarget>
+        <rdfs:comment>Produces 21 million megawatthours of electricity each year</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterDirection"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</owl:annotatedTarget>
+        <rdfs:comment>80 degrees representing the direction from which water is flowing.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterLevel"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</owl:annotatedTarget>
+        <rdfs:comment>5 meters (representing the height or depth of water).</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydropower_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydropower_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Hydroelectric_Plant"/>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q170196</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+        <untitled-ontology-33:NotificationMessage>No issues detected. System operating normally.</untitled-ontology-33:NotificationMessage>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q29415492</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q40015</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Energy_Meter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Energy_Meter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Irradiance_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Irradiance_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Panel_Temperature_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Panel_Temperature_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q646</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Energy_Meter"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Irradiance_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Panel_Temperature_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Tilt_and_Orientation_Sensor"/>
+        <untitled-ontology-33:EnergyProduced>2,245</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:Irradiance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800</untitled-ontology-33:Irradiance>
+        <untitled-ontology-33:Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-33:Temperature>
+        <untitled-ontology-33:TiltAngle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-33:TiltAngle>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2298412</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget>2,245</owl:annotatedTarget>
+        <rdfs:comment>Largest solar farms in the world can generate up to 2,245 GW of energy per year</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Irradiance"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800</owl:annotatedTarget>
+        <rdfs:comment>800 W/m² representing the intensity of sunlight hitting the solar panels.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Temperature"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</owl:annotatedTarget>
+        <rdfs:comment>48°C representing the temperature of the solar panels.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Solar_Photovoltaic_Farm"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#TiltAngle"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</owl:annotatedTarget>
+        <rdfs:comment>30 degrees representing the tilt angle of a solar panel.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Tilt_and_Orientation_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Tilt_and_Orientation_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q113158862</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Notifications"/>
+        <untitled-ontology-33:NotificationMessage>Potential issue detected. Attention required.</untitled-ontology-33:NotificationMessage>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1759104</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Direction_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Direction_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q10497232</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Level_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Level_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Direction_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Water_Level_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Meter_Sensor"/>
+        <untitled-ontology-33:EnergyProduced rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2170</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:WaterDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</untitled-ontology-33:WaterDirection>
+        <untitled-ontology-33:WaterLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-33:WaterLevel>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q3068975</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2170</owl:annotatedTarget>
+        <rdfs:comment>In the United States there is an estimated 2,170 Terawatt-hours of annual energy available from ocean waves.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterDirection"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</owl:annotatedTarget>
+        <rdfs:comment>120 degrees representing the direction from which water is flowing.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Converter"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WaterLevel"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</owl:annotatedTarget>
+        <rdfs:comment>3.5 meters representing the height or depth of water.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Meter_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wave_Energy_Meter_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Direction_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Direction_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q524738</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Energy_Meter_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Energy_Meter_Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Alert"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Early_Warning"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Inactive"/>
+        <untitled-ontology-33:triggers rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Warning"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q622756</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Power_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Power_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Renewable_Energy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#produced_by"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:produced_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine"/>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q43302</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Producers"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#checked_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Sensors"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Anemometer"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Direction_Sensor"/>
+        <untitled-ontology-33:checked_by rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Energy_Meter_Sensor"/>
+        <untitled-ontology-33:EnergyProduced rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">434.8</untitled-ontology-33:EnergyProduced>
+        <untitled-ontology-33:WindDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">280</untitled-ontology-33:WindDirection>
+        <untitled-ontology-33:WindSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.8</untitled-ontology-33:WindSpeed>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q49833</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#EnergyProduced"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">434.8</owl:annotatedTarget>
+        <rdfs:comment>In 2022, around 434.8 terawatt hours of wind electricity were generated in the United States.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindDirection"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">280</owl:annotatedTarget>
+        <rdfs:comment>280 degrees representing the direction from which the wind is blowing.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#Wind_Turbine"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/talhaalperasav/ontologies/2023/11/untitled-ontology-33#WindSpeed"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.8</owl:annotatedTarget>
+        <rdfs:comment>5.8 m/s</rdfs:comment>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

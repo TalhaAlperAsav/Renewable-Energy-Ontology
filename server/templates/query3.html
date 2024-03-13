@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Query 3 Results</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Query 3 Results</h1>
+
+            <h2>Results:</h2>
+            <div class="table_wrapper">
+                <table>
+                    <tr>
+                        <th>superclass</th>
+                        <th>superclassLabel</th>
+                        <th>superclassDescription</th>
+                    </tr>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.superclass.value }}</td>
+                        <td>{{ result.superclassLabel.value }}</td>
+                        <td>{{ result.superclassDescription.value }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <p>Query Option: {{ query_option }}</p>
+        </div>
+    </main>
+</body>
+
+</html>
